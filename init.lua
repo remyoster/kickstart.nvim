@@ -739,6 +739,13 @@ require('lazy').setup({
     end,
   },
 
+  -- ts serv
+  {
+    'pmizio/typescript-tools.nvim',
+    dependencies = { 'nvim-lua/plenary.nvim', 'neovim/nvim-lspconfig' },
+    opts = {},
+  },
+
   { -- Autoformat
     'stevearc/conform.nvim',
     event = { 'BufWritePre' },
@@ -1012,11 +1019,6 @@ require('lazy').setup({
       task = '📌',
       lazy = '💤 ',
     },
-  },
-  {
-    'pmizio/typescript-tools.nvim',
-    dependencies = { 'nvim-lua/plenary.nvim', 'neovim/nvim-lspconfig' },
-    opts = {},
   },
 })
 
